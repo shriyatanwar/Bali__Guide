@@ -1,0 +1,226 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.first__image{
+    background-image: url("image1.avif");
+    background-size: cover; 
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 600px; 
+   animation: imagechange 20s infinite;
+   animation-delay: 500ms;
+}
+@keyframes imagechange {
+    50%{
+        background-image: url('beach.avif');
+    }
+    100%{
+        background-image: url('nusa.jpg');
+    }
+    
+}
+.heading1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #eba8a8;
+}
+.bottom-left {
+    font-size: 24px;
+    color: white;
+}
+.bottom-right {
+    font-size: 24px;
+    color: white;   
+}
+
+.expand__para{
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+    padding: 50px;
+}
+.container {
+    display: flex;
+    width: 90vw;
+    margin-top: 50px;
+}
+  
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-out;
+    
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 5;
+}
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+  
+@media (max-width: 480px) {
+    .container {
+      width: 100vw;
+}
+.panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+}
+.para{
+    margin-top: 70px;
+    font-size: 70px;
+}
+.our__stories ,.food ,.videos{
+    width:300px;
+    height: 400px; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+}
+.heading2{
+    position: absolute;
+    color: rgb(207, 101, 101);
+    background-color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.quick__links {
+    display: flex;
+    justify-content: center;  
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bali__paradise{
+    background-color: beige;
+    text-align: center;
+    padding: 30px;
+    margin-top: 70px;
+}
+.bali__images{
+    border: solid 2px black;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.responsive {
+    width: 50%; /* Two items per row */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.gallery {
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+    padding: 15px;
+    width: 500px; 
+    text-align: center;
+    background-color: #f9f9f9;  
+}
+
+.gallery img {
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+#guide {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.guide_main_heading, .guide_sub_heading {
+    text-align: center;
+    color: #c94e2c;
+    margin-bottom: 15px;
+}
+
+.guide__para, .guide_sub_para {
+    line-height: 1.8;
+    color: #555;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.general__tips {
+    padding-left: 0;
+    list-style: none;
+}
+
+.general__tips li {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.general__tips li:hover {
+    transform: translateY(-5px);
+}
+
+.sub__head {
+    color: #9652e3;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.sub__para {
+    margin: 5px 0;
+}
+
+b {
+    color: #2E7D32;
+}
